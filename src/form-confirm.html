@@ -1,0 +1,30 @@
+---
+layout: default
+title: Pluto | Подтверждение
+---
+
+<div class="enter">
+    <div class="enter__window">
+        <h2 class="page__subtitle">Введите код</h2>
+        <form action="/" method="get">
+            <label class="form__label">Код выслан на номер<span class="enter__subtitle" id="confirmTel">+79876543210</span></label>
+            <input
+                class="form__input"
+                type="text"
+                id="confirmInput">
+            <label class="form__label">Запросить код повторно через<span class="enter__subtitle" id="resendCode">00:60</span></label>
+            <div class="enter__item">
+                <label class="form__label form__label--checkbox" for="enterAgreement">
+                    <input
+                        class="form__checkbox"
+                        type="checkbox"
+                        name="enterAgreement"
+                        id="enterAgreement"
+                        checked
+                        required>
+                    <span class="form__name">Согласен с условиями Праквил пользования торговой площадкой и правилами возрата</span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>

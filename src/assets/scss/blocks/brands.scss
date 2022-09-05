@@ -1,0 +1,32 @@
+.brands__wrapper {
+    justify-content: center;
+    column-gap: 30px;
+
+    @include breakpoint(768px) {
+        row-gap: 20px;
+    }
+
+    @include breakpoint(576px) {
+        gap: 10px 20px;
+    }
+
+    @include breakpoint(576px) {
+        gap: 20px;
+    }
+}
+
+.brands__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brands__name {
+    margin-top: 15px;
+
+    font-size: var(--regular-text);
+    font-family: var(--secondfont);
+    text-transform: uppercase;
+    color: var(--gray);
+    text-align: center;
+}

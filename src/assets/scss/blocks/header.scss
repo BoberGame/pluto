@@ -1,0 +1,144 @@
+.header {
+    padding: 15px 0 20px;
+
+    background-color: var(--white);
+    font-family: var(--secondfont);
+
+    &.scrolled {
+        padding: 12px 0;
+
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        right: 0;
+        left: 0;
+
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    @include breakpoint(1140px) {
+        padding: 12px 0;
+
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        right: 0;
+        left: 0;
+
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06);
+    }
+}
+
+.header__row {
+    .scrolled & {
+        align-items: center;
+    }
+
+    @include breakpoint(1320px) {
+        align-items: center;
+    }
+}
+
+.header__left {
+    .scrolled & {
+        display: none;
+    }
+
+    @include breakpoint(1320px) {
+        display: none;
+    }
+}
+
+.header__switch {
+    display: flex;
+    margin-bottom: 5px;
+    column-gap: 10px;
+}
+
+.header__switch__btn {
+    font-size: 1.3rem;
+    color: var(--gray);
+    text-decoration: none;
+
+    &.active {
+        color: var(--brand);
+    }
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo__img {
+    @include breakpoint(576px) {
+        width: 130px;
+    }
+}
+
+.header__logo__text {
+    margin-top: 5px;
+
+    font-size: 1.3rem;
+    color: var(--gray);
+
+    .scrolled & {
+        display: none;
+    }
+
+    @include breakpoint(1320px) {
+        display: none;
+    }
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    @include breakpoint(768px) {
+        display: none;
+    }
+}
+
+.header__menu__link {
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+
+    &--search {
+        &.hidden {
+            display: none;
+        }
+    }
+}
+
+.header__menu__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--black);
+    transition: fill 0.1s ease-out;
+
+    .header__menu__link:hover & {
+        fill: var(--brand);
+    }
+}
+
+.header__menu__text {
+    margin-top: 5px;
+
+    font-size: 1.3rem;
+    color: var(--gray);
+    transition: color 0.1s ease-out;
+
+    .header__menu__link:hover & {
+        color: var(--brand);
+    }
+
+    &.hidden {
+        display: none;
+    }
+}

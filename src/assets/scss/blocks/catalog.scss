@@ -1,0 +1,43 @@
+.catalog {
+    padding: 40px 0 50px;
+
+    background-color: var(--background);
+
+    @include breakpoint(1140px) {
+        padding-top: 100px;
+    }
+}
+
+.catalog__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.catalog__actions {
+    display: flex;
+    column-gap: 12px;
+    margin-bottom: 20px;
+
+    @include breakpoint(576px) {
+        & .cat-btn {
+            display: none;
+        }
+    }
+}
+
+.catalog__indicator {
+    font-size: 1.3rem;
+    font-family: var(--secondfont);
+    color: #000;
+    line-height: 1.2;
+
+    @include breakpoint(576px) {
+        display: none;
+    }
+
+    span {
+        color: var(--brand);
+    }
+}

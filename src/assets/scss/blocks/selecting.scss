@@ -1,0 +1,97 @@
+.selecting {
+    margin-bottom: 120px;
+
+    background: url(../images/selecting-bg.svg) center no-repeat;
+    background-size: 100% auto;
+
+    @include breakpoint(768px) {
+        background-size: cover;
+    }
+}
+
+.selecting__wrapper {
+    display: flex;
+    padding: 4.47% 0;
+    position: relative;
+
+    @include breakpoint(768px) {
+        padding: 200px 0 0;
+        justify-content: center;
+    }
+}
+
+.selecting__window {
+    max-width: 700px;
+    margin-left: 10%;
+    padding: 50px;
+
+    position: relative;
+    z-index: 3;
+
+    background-color: var(--background);
+
+    @include breakpoint(1320px) {
+        max-width: 600px;
+    }
+
+    @include breakpoint(992px) {
+        padding: 25px;
+    }
+
+    @include breakpoint(768px) {
+        margin-left: 0;
+    }
+
+    @include breakpoint(576px) {
+        max-width: 400px;
+        padding: 20px;
+    }
+}
+
+.selecting__title {
+    font-size: 2.8rem;
+    letter-spacing: 0.01em;
+
+    @include breakpoint(992px) {
+        font-size: 2.4rem;
+    }
+}
+
+.selecting__text {
+    margin: 5px 0 40px;
+
+    font-family: var(--secondfont);
+    font-size: var(--regular-text);
+    line-height: 1.6;
+
+    @include breakpoint(992px) {
+        font-size: 1.4rem;
+    }
+}
+
+.selecting__img {
+    max-height: 105%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    @include breakpoint(768px) {
+        max-height: 110%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+.selecting__actions {
+    @include breakpoint(576px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        button {
+            font-size: 1.3rem;
+        }
+    }
+}

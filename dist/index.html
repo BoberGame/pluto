@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2916d673-2794-415a-884a-d370f26bb315&lang=ru_RU">
+    </script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Pluto</title></head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__row row">
+                    <div class="header__left col-lg-3">
+                        <div class="header__switch">
+                            <a href="index.html" class="header__switch__btn btn active">Магазин</a>
+                            <a href="#" class="header__switch__btn btn">Шоурум</a>
+                        </div>
+                        <address class="address">
+                            <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                    <div class="burger__wrapper col-1 col-md-3 col-lg-3">
+                        <button class="burger" type="button"><span>Меню</span></button>
+                    </div>
+        
+                    <div class="header__logo col-5 offset-3 col-md-2 col-lg-2 offset-md-2 offset-lg-2">
+                        <img class="header__logo__img img" src="assets/images/logo.svg" alt="Pluto Жизнь - яркая штука!">
+                        <div class="header__logo__text">Жизнь - яркая штука!</div>
+                    </div>
+        
+                    <div class="header__menu col-md-4 col-lg-3 offset-md-1 offset-lg-2">
+                        <form class="form__search" action="not-found.html" method="get">
+                            <input class="form__input form__input--search" type="text" placeholder="Искать">
+                        </form>
+                        <a class="header__menu__link header__menu__link--search" href="#" id="searchBtn">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M9.16667 3.125C5.82995 3.125 3.125 5.82995 3.125 9.16667c0 3.33673 2.70495 6.04163 6.04167 6.04163 3.33673 0 6.04163-2.7049 6.04163-6.04163 0-3.33672-2.7049-6.04167-6.04163-6.04167ZM1.875 9.16667c0-4.02708 3.26459-7.29167 7.29167-7.29167 4.02703 0 7.29163 3.26459 7.29163 7.29167 0 4.02703-3.2646 7.29163-7.29163 7.29163-4.02708 0-7.29167-3.2646-7.29167-7.29163Z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M13.4331 13.4331c.244-.2441.6398-.2441.8838 0l3.625 3.625c.2441.244.2441.6398 0 .8838-.244.2441-.6398.2441-.8838 0l-3.625-3.625c-.2441-.244-.2441-.6398 0-.8838Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Искать</span>
+                        </a>
+                        <a class="header__menu__link" href="form-enter.html">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.87 13.03a3.96 3.96 0 0 1 2.8-1.15h6.66a3.96 3.96 0 0 1 3.96 3.95v1.67a.63.63 0 0 1-1.25 0v-1.67a2.7 2.7 0 0 0-2.7-2.7H6.66a2.7 2.7 0 0 0-2.71 2.7v1.67a.62.62 0 1 1-1.25 0v-1.67c0-1.05.41-2.05 1.16-2.8ZM10 3.13a2.7 2.7 0 1 0 0 5.41 2.7 2.7 0 0 0 0-5.41Zm-3.96 2.7a3.96 3.96 0 1 1 7.92 0 3.96 3.96 0 0 1-7.92 0Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Вход</span>
+                        </a>
+                        <a class="header__menu__link" href="profile.html" id="tabsFavBtn">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Избранное</span>
+                        </a>
+                        <a class="header__menu__link" href="basket.html">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path d="M17 5.5v11.25c0 .31-.06.6-.18.87A2.32 2.32 0 0 1 14.69 19H4.31a2.38 2.38 0 0 1-2.12-1.38 2.1 2.1 0 0 1-.19-.87V5.5h2.3V4.37A3.44 3.44 0 0 1 7.77 1c.63.01 1.21.16 1.75.47a3.42 3.42 0 0 1 3.06-.2 3.54 3.54 0 0 1 1.85 1.8c.18.42.27.85.27 1.31V5.5H17Zm-3.46-1.13a2.3 2.3 0 0 0-3.07-2.12 3.3 3.3 0 0 1 .64 1.25c.05.2.08.41.1.62l.02.68v.7h2.3V4.37ZM5.46 5.5h4.62V4.37a2.3 2.3 0 0 0-2.3-2.25A2.38 2.38 0 0 0 5.65 3.5a2.1 2.1 0 0 0-.2.88V5.5Zm7.23 12.38a2.2 2.2 0 0 1-.3-1.13V6.62H3.14v10.13a1.07 1.07 0 0 0 .34.8 1.18 1.18 0 0 0 .82.32h8.38Zm3.16-11.25h-2.31v10.12a1.07 1.07 0 0 0 .34.8 1.18 1.18 0 0 0 1.26.24 1.18 1.18 0 0 0 .62-.6c.06-.14.09-.28.09-.44V6.62Z" />
+                            </svg>
+                            <span class="header__menu__text">Корзина</span>
+                        </a>
+                    </div><!-- /.header__menu -->
+                </div><!-- /.row -->
+        
+        
+        
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Нижнее бельё</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Купальники</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Домашняя одежда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Носочно-чулочные изделия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Пляжная одежда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Аксессуары</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Мужчинам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Детям</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--sale" href="#">SALE
+                                <span class="nav__link__count">32</span>
+                            </a>
+                            <div class="nav__catalog">
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Тип</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Балконет</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бесшовное бельё</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Боди</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бралетт</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бюстгальтеры</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Комплект нижнего белья</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Корректирующее белье</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Корсеты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Пояса для чулок</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Стринги</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы бикини</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы бразилиано</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы танго</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы шорты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Коллекции</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">DKNY</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">YSABEL MORA</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">PLUTO</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">ORNIT</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">AGUA BENDITA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Особенности</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">SALE &#8212; <span>Шоурум</span></a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">НОВИНКА &#8212; <span>Магазин</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.nav__catalog -->
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__address__item">
+                                <h3 class="footer__title">Магазин</h3>
+                                <address class="address">
+                                    <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                                    <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                                </address>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__address__item">
+                                <h3 class="footer__title">Шоурум</h3>
+                                <address class="address">
+                                    <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                                    <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                                </address>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__social__logo">
+                                <a href="#" target="_blank">
+                                    <img class="img" src="assets/images/inst-logo.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul><!-- /.nav__list -->
+                   
+                </nav><!-- /.nav -->
+            </div><!-- /.container -->
+        </header><!-- /.header -->
+        <main>
+            
+            <!-- Intro -->
+            <div class="intro">
+                <div class="intro__item intro__item--main">
+                    <img class="intro__img img" src="assets/images/intro/intro-1.jpg" alt="Одежда и бельё женское">
+                    <div class="intro__wrapper intro__wrapper--main">
+                        <h1 class="intro__title">Одежда и бельё женское</h1>
+                        <div class="intro__text">Нижнее белье, пижамы, купальники, бикини, боди, ночные рубашки. Модели для каждой женщины!</div>
+                        <a class="intro__btn btn btn--white" href="#">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="intro__col">
+                    <div class="intro__item">
+                        <img class="into__img img" src="assets/images/intro/intro-2.jpg" alt="Мужчинам">
+                        <div class="intro__wrapper">
+                            <h2 class="intro__subtitle">Мужчинам</h2>
+                            <a class="intro__link" href="catalog.html">Смотреть каталог</a>
+                        </div>
+                    </div>
+                    <div class="intro__item">
+                        <img class="into__img img" src="assets/images/intro/intro-3.jpg" alt="Детям">
+                        <div class="intro__wrapper">
+                            <h2 class="intro__subtitle">Детям</h2>
+                            <a class="intro__link" href="catalog.html">Смотреть каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.intro -->
+            
+            
+            
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="container">
+                    <div class="tabs__nav">
+                        <button class="nav__tabs__btn btn active" type="button" data-tab="#tab-1">Новинки</button>
+                        <button class="nav__tabs__btn btn" type="button" data-tab="#tab-2">Коллекции</button>
+                        <button class="nav__tabs__btn btn" type="button" data-tab="#tab-3">Sale</button>
+                    </div>
+                    <div class="card tabs__content">
+                        <div class="tabs__item active" id="tab-1">
+                            <div class="swiper swiper-card1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="1">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-1.jpg" alt="Стринги Graziella">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">Стринги Graziella</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="2">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-2.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="3">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-3.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red active" type="button">red</button>
+                                                <button class="card__color__btn white" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+            
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="4">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-4.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="5">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-1.jpg" alt="Стринги Graziella">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">Стринги Graziella</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="6">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-2.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="7">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-3.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red active" type="button">red</button>
+                                                <button class="card__color__btn white" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+            
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="8">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-4.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev swiper-card-prev1"></div>
+                                <div class="swiper-button-next swiper-card-next1"></div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab-2">
+                            <div class="swiper swiper-card2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="9">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-7.jpg" alt="Стринги Graziella">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">Стринги Graziella</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="10">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-6.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="11">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-5.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red active" type="button">red</button>
+                                                <button class="card__color__btn white" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+            
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="12">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-4.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="13">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-7.jpg" alt="Стринги Graziella">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">Стринги Graziella</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="14">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-6.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="15">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-5.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red active" type="button">red</button>
+                                                <button class="card__color__btn white" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+            
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="16">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-4.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev swiper-card-prev2"></div>
+                                <div class="swiper-button-next swiper-card-next2"></div>
+                            </div>
+                        </div>
+                        <div class="tabs__item" id="tab-3">
+                            <div class="swiper swiper-card3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="17">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-6.jpg" alt="Стринги Graziella">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">Стринги Graziella</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="18">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-7.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="19">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-2.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red active" type="button">red</button>
+                                                <button class="card__color__btn white" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+            
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="20">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-8.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="21">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-6.jpg" alt="Стринги Graziella">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">Стринги Graziella</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="22">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-7.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="23">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-2.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red active" type="button">red</button>
+                                                <button class="card__color__btn white" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+            
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card__item" data-card="24">
+                                            <div class="card__preview">
+                                                <img class="card__img img" src="assets/images/card/card-8.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                <button class="card__favorite__btn" type="button">
+                                                    <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <div class="size">
+                                                    <span class="size__title">Добавить размер</span>
+                                                    <ul class="size__list">
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XXS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">XS</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">S</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link off" type="button">M</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">L</button>
+                                                        </li>
+                                                        <li class="size__item">
+                                                            <button class="size__link" type="button">Xl</button>
+                                                        </li>
+                                                    </ul>
+                                                    <button class="size__table btn" type="button">Таблица размеров</button>
+                                                </div>
+                                            </div>
+                                            <div class="card__color">
+                                                <button class="card__color__btn red" type="button">red</button>
+                                                <button class="card__color__btn white active" type="button">white</button>
+                                            </div>
+                                            <h3 class="card__title">
+                                                <a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a>
+                                            </h3>
+                                            <div class="card__price">2 717,91 руб.</div>
+                                        </div><!-- /.card__item -->
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev swiper-card-prev3"></div>
+                                <div class="swiper-button-next swiper-card-next3"></div>
+                            </div>
+                        </div>
+                    </div><!-- /.tabs__content -->
+                </div><!-- /.container -->
+            </div><!-- /.tabs -->
+            
+            
+            
+            <!-- Selecting -->
+            <div class="selecting">
+                <div class="container-lg gx-0">
+                    <div class="selecting__wrapper">
+                        <div class="selecting__window">
+                            <h2 class="selecting__title">Записаться на Бра-фиттинг</h2>
+                            <div class="selecting__text">
+                                <p>Мы занимаемся подбором белья на большую грудь уже более 10 лет и готовы подтвердить - да, это возможно.</p>
+                                <p>Удобно ли Вам в нем? Какие проблемы оно вызывает? Мы разберемся, в чем источник дискомфорта – и предложим решение.</p>
+                            </div>
+                            <div class="selecting__actions">
+                                <button class="btn btn--brand" type="button" id="modalSignBtn">Записаться</button>
+                                <button class="btn btn--outline" type="button">Смотреть отзывы</button>
+                            </div>
+                        </div>
+                        <img class="selecting__img img" src="assets/images/selecting-img.png" alt="Записаться на Бра-фиттинг">
+                    </div>
+                </div>
+            </div><!-- /.selecting -->
+            
+            
+            
+            <!-- Reviews -->
+            <section class="reviews section">
+                <div class="section__header">
+                    <h2 class="section__title">Отзывы</h2>
+                </div>
+                <div class="container">
+                    <div class="reviews__wrapper">
+                        <div class="swiper swiper-reviews">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <img class="reviews__img img" src="https://placehold.co/238x330" alt="Отзыв">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-reviews-pagination"></div>
+                            <div class="swiper-button-prev swiper-reviews-prev"></div>
+                            <div class="swiper-button-next swiper-reviews-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- /.reviews -->
+            
+            
+            
+            <!-- News -->
+            <section class="news section section--news">
+                <div class="section__header">
+                    <h2 class="section__title">Больше новостей и фото в нашем Instagram</h2>
+                </div>
+                <div class="container">
+                    <div class="news__wrapper">
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-1.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-2.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-3.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-4.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-5.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-6.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-7.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-8.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-9.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-10.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-11.jpg" alt="фото">
+                        </div>
+                        <div class="news__item">
+                            <img class="img" src="assets/images/news/news-12.jpg" alt="фото">
+                        </div>
+                    </div><!-- /.news__wrapper -->
+                    <div class="news__actions">
+                        <button class="btn btn--outline" type="button">Больше фото</button>
+                        <button class="btn btn--brand" type="button">Подписаться</button>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.news -->
+            
+            
+            
+            <!-- Blog -->
+            <section class="blog section">
+                <div class="section__header">
+                    <h2 class="section__title">Последние статьи из блога</h2>
+                </div>
+                <div class="container blog__slider">
+                    <div class="swiper swiper-blog">
+                        <div class="swiper-wrapper">
+                            <div class="blog__item swiper-slide">
+                                <div class="blog__preview">
+                                    <img class="img" src="assets/images/blog/blog-1.jpg" alt="фото">
+                                </div>
+                                <a class="blog__category" href="#">Общие советы</a>
+                                <h3 class="blog__title"><a href="#">Взаимозаменяемые размеры. Немного Бра-фиттинга</a></h3>
+                                <time class="blog__date" datetime="2021-02-10">10 февраля 2022</time>
+                            </div>
+                            <div class="blog__item swiper-slide">
+                                <div class="blog__preview">
+                                    <img class="img" src="assets/images/blog/blog-2.jpg" alt="фото">
+                                </div>
+                                <a class="blog__category" href="blog.html">Идеи для модных образов</a>
+                                <h3 class="blog__title"><a href="#">Мы в печатных издания и на мониторах</a></h3>
+                                <time class="blog__date" datetime="2021-02-06">6 февраля 2022</time>
+                            </div>
+                            <div class="blog__item swiper-slide">
+                                <div class="blog__preview">
+                                    <img class="img" src="assets/images/blog/blog-3.jpg" alt="фото">
+                                </div>
+                                <a class="blog__category" href="blog.html">Идеи для модных образов</a>
+                                <h3 class="blog__title"><a href="#">Девочка Banana Mun</a></h3>
+                                <time class="blog__date" datetime="2021-01-15">15 января 2022</time>
+                            </div>
+                            <div class="blog__item swiper-slide">
+                                <div class="blog__preview">
+                                    <img class="img" src="assets/images/blog/blog-4.jpg" alt="фото">
+                                </div>
+                                <a class="blog__category" href="blog.html">Идеи для модных образов</a>
+                                <h3 class="blog__title"><a href="#">Немного о нижнем белье</a></h3>
+                                <time class="blog__date" datetime="2021-01-03">3 января 2022</time>
+                            </div>
+                            <div class="blog__item swiper-slide">
+                                <div class="blog__preview">
+                                    <img class="img" src="assets/images/blog/blog-3.jpg" alt="фото">
+                                </div>
+                                <a class="blog__category" href="blog.html">Идеи для модных образов</a>
+                                <h3 class="blog__title"><a href="#">Девочка Banana Mun</a></h3>
+                                <time class="blog__date" datetime="2021-01-15">15 января 2022</time>
+                            </div>
+                            <div class="blog__item swiper-slide">
+                                <div class="blog__preview">
+                                    <img class="img" src="assets/images/blog/blog-4.jpg" alt="фото">
+                                </div>
+                                <a class="blog__category" href="blog.html">Идеи для модных образов</a>
+                                <h3 class="blog__title"><a href="#">Немного о нижнем белье</a></h3>
+                                <time class="blog__date" datetime="2021-01-03">3 января 2022</time>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev swiper-blog-prev"></div>
+                        <div class="swiper-button-next swiper-blog-next"></div>
+                    </div>
+                </div><!-- /.container -->
+            </section><!-- /.blog -->
+            
+            
+            
+            <!-- Brands -->
+            <section class="brands section">
+                <div class="section__header">
+                    <h2 class="section__title">Популярные бренды</h2>
+                </div>
+                <div class="container">
+                    <div class="row brands__wrapper">
+                        <div class="brands__item col-4 col-sm-3 col-md-2">
+                            <img class="img" src="assets/images/brands/1.png" alt="ANTIGEL">
+                            <div class="brands__name">ANTIGEL</div>
+                        </div>
+                        <div class="brands__item col-4 col-sm-3 col-md-2">
+                            <img class="img" src="assets/images/brands/2.png" alt="AMELIE">
+                            <div class="brands__name">AMELIE</div>
+                        </div>
+                        <div class="brands__item col-4 col-sm-3 col-md-2">
+                            <img class="img" src="assets/images/brands/3.png" alt="PLEASURE STATE">
+                            <div class="brands__name">PLEASURE STATE</div>
+                        </div>
+                        <div class="brands__item col-4 col-sm-3 col-md-2">
+                            <img class="img" src="assets/images/brands/4.png" alt="SENSERA">
+                            <div class="brands__name">SENSERA</div>
+                        </div>
+                        <div class="brands__item col-4 col-sm-3 col-md-2">
+                            <img class="img" src="assets/images/brands/5.png" alt="VIENETTA">
+                            <div class="brands__name">VIENETTA</div>
+                        </div>
+                    </div><!-- /.brands__wrapper -->
+                </div><!-- /.container -->
+            </section><!-- /.brands -->
+            
+            
+            
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <div class="row about__wrapper">
+                        <div class="about__preview col-11 col-md-5">
+                            <img class="about__video" src="assets/images/about-preview.jpg" alt="video">
+                        </div>
+                        <div class="about__content col-11 col-md-7">
+                            <h3 class="about__title">Интернет-магазин нижнего белья «PLUTO»</h3>
+                            <div class="about__text">
+                                <p>Стиль нижнего белья непременно должен гармонировать с общим стилем женщины. Он формирует настроение, позволяет чувствовать себя лучше и увереннее. Нижнее белье — это один из элементов, формирующих высокую самооценку и помогающий создавать положительный настрой на день. Существует множество видов нижнего белья, и каждый стиль имеет собственные особенности исполнения, передающий особый замысел.</p>
+                            </div>
+                            <a class="about__more" href="blog.html">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img class="header__logo__img img" src="assets/images/logo.svg" alt="Pluto">
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Услуги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="delivery.html">Доставка и Оплата</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Помощь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer__address">
+                    <div class="footer__social__logo">
+                        <a href="#" target="_blank">
+                            <img class="img" src="assets/images/inst-logo.svg" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="footer__address__item">
+                        <h3 class="footer__title">Магазин</h3>
+                        <address class="address">
+                            <a class="address__link" href="#">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                    <div class="footer__address__item">
+                        <h3 class="footer__title">Шоурум</h3>
+                        <address class="address">
+                            <a class="address__link" href="#">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                </div>
+            </div><!-- /.footer__wrapper -->
+        
+            <div class="footer__copyright container">
+                <div class="footer__copyright__link">&#169; 2022 «Плуто» Все права защищены</div>
+                <a class="footer__copyright__link" href="#">Карта сайта</a>
+                <a class="footer__copyright__link" href="#">Политика обработки персональных данных</a>
+                <div class="footer__copyright__link">
+                    <span>Разработка и дизайн:</span>
+                    <a href="#" target="_blank">
+                        <img class="footer__copyright__logo img" src="assets/images/copyright-logo.svg" alt="Cyber Nevod">
+                    </a>
+                </div>
+            </div>
+        </footer><!-- /.footer -->    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2916d673-2794-415a-884a-d370f26bb315&lang=ru_RU">
+    </script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Pluto | Доставка и оплата</title></head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__row row">
+                    <div class="header__left col-lg-3">
+                        <div class="header__switch">
+                            <a href="index.html" class="header__switch__btn btn active">Магазин</a>
+                            <a href="#" class="header__switch__btn btn">Шоурум</a>
+                        </div>
+                        <address class="address">
+                            <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                    <div class="burger__wrapper col-1 col-md-3 col-lg-3">
+                        <button class="burger" type="button"><span>Меню</span></button>
+                    </div>
+        
+                    <div class="header__logo col-5 offset-3 col-md-2 col-lg-2 offset-md-2 offset-lg-2">
+                        <img class="header__logo__img img" src="assets/images/logo.svg" alt="Pluto Жизнь - яркая штука!">
+                        <div class="header__logo__text">Жизнь - яркая штука!</div>
+                    </div>
+        
+                    <div class="header__menu col-md-4 col-lg-3 offset-md-1 offset-lg-2">
+                        <form class="form__search" action="not-found.html" method="get">
+                            <input class="form__input form__input--search" type="text" placeholder="Искать">
+                        </form>
+                        <a class="header__menu__link header__menu__link--search" href="#" id="searchBtn">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M9.16667 3.125C5.82995 3.125 3.125 5.82995 3.125 9.16667c0 3.33673 2.70495 6.04163 6.04167 6.04163 3.33673 0 6.04163-2.7049 6.04163-6.04163 0-3.33672-2.7049-6.04167-6.04163-6.04167ZM1.875 9.16667c0-4.02708 3.26459-7.29167 7.29167-7.29167 4.02703 0 7.29163 3.26459 7.29163 7.29167 0 4.02703-3.2646 7.29163-7.29163 7.29163-4.02708 0-7.29167-3.2646-7.29167-7.29163Z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M13.4331 13.4331c.244-.2441.6398-.2441.8838 0l3.625 3.625c.2441.244.2441.6398 0 .8838-.244.2441-.6398.2441-.8838 0l-3.625-3.625c-.2441-.244-.2441-.6398 0-.8838Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Искать</span>
+                        </a>
+                        <a class="header__menu__link" href="form-enter.html">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.87 13.03a3.96 3.96 0 0 1 2.8-1.15h6.66a3.96 3.96 0 0 1 3.96 3.95v1.67a.63.63 0 0 1-1.25 0v-1.67a2.7 2.7 0 0 0-2.7-2.7H6.66a2.7 2.7 0 0 0-2.71 2.7v1.67a.62.62 0 1 1-1.25 0v-1.67c0-1.05.41-2.05 1.16-2.8ZM10 3.13a2.7 2.7 0 1 0 0 5.41 2.7 2.7 0 0 0 0-5.41Zm-3.96 2.7a3.96 3.96 0 1 1 7.92 0 3.96 3.96 0 0 1-7.92 0Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Вход</span>
+                        </a>
+                        <a class="header__menu__link" href="profile.html" id="tabsFavBtn">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Избранное</span>
+                        </a>
+                        <a class="header__menu__link" href="basket.html">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path d="M17 5.5v11.25c0 .31-.06.6-.18.87A2.32 2.32 0 0 1 14.69 19H4.31a2.38 2.38 0 0 1-2.12-1.38 2.1 2.1 0 0 1-.19-.87V5.5h2.3V4.37A3.44 3.44 0 0 1 7.77 1c.63.01 1.21.16 1.75.47a3.42 3.42 0 0 1 3.06-.2 3.54 3.54 0 0 1 1.85 1.8c.18.42.27.85.27 1.31V5.5H17Zm-3.46-1.13a2.3 2.3 0 0 0-3.07-2.12 3.3 3.3 0 0 1 .64 1.25c.05.2.08.41.1.62l.02.68v.7h2.3V4.37ZM5.46 5.5h4.62V4.37a2.3 2.3 0 0 0-2.3-2.25A2.38 2.38 0 0 0 5.65 3.5a2.1 2.1 0 0 0-.2.88V5.5Zm7.23 12.38a2.2 2.2 0 0 1-.3-1.13V6.62H3.14v10.13a1.07 1.07 0 0 0 .34.8 1.18 1.18 0 0 0 .82.32h8.38Zm3.16-11.25h-2.31v10.12a1.07 1.07 0 0 0 .34.8 1.18 1.18 0 0 0 1.26.24 1.18 1.18 0 0 0 .62-.6c.06-.14.09-.28.09-.44V6.62Z" />
+                            </svg>
+                            <span class="header__menu__text">Корзина</span>
+                        </a>
+                    </div><!-- /.header__menu -->
+                </div><!-- /.row -->
+        
+        
+        
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Нижнее бельё</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Купальники</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Домашняя одежда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Носочно-чулочные изделия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Пляжная одежда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Аксессуары</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Мужчинам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Детям</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--sale" href="#">SALE
+                                <span class="nav__link__count">32</span>
+                            </a>
+                            <div class="nav__catalog">
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Тип</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Балконет</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бесшовное бельё</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Боди</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бралетт</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бюстгальтеры</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Комплект нижнего белья</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Корректирующее белье</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Корсеты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Пояса для чулок</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Стринги</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы бикини</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы бразилиано</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы танго</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы шорты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Коллекции</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">DKNY</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">YSABEL MORA</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">PLUTO</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">ORNIT</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">AGUA BENDITA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Особенности</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">SALE &#8212; <span>Шоурум</span></a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">НОВИНКА &#8212; <span>Магазин</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.nav__catalog -->
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__address__item">
+                                <h3 class="footer__title">Магазин</h3>
+                                <address class="address">
+                                    <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                                    <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                                </address>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__address__item">
+                                <h3 class="footer__title">Шоурум</h3>
+                                <address class="address">
+                                    <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                                    <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                                </address>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__social__logo">
+                                <a href="#" target="_blank">
+                                    <img class="img" src="assets/images/inst-logo.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul><!-- /.nav__list -->
+                   
+                </nav><!-- /.nav -->
+            </div><!-- /.container -->
+        </header><!-- /.header -->
+        <main>
+            <!-- Delivery -->
+            <div class="delivery">
+                <div class="container">
+                    <h2 class="page__title text-center">Доставка и оплата</h2>
+                    <div class="row">
+                        <div class="delivery__wrapper col-md-8 offset-md-2">
+                            <div class="delivery__blog">
+                                <h3 class="delivery__title">Доставка и оплата</h3>
+                                <div class="delivery__text">
+                                    <p>Доставка осуществляется во все регионы России и производится в течении 2-10 рабочих дней с момента передачи подтвержденного заказа курьерской службе. Сроки доставки согласовываются с курьерской службой, также доступна доставка в пункт выдачи СДЭК.</p>
+                                    <p>Для Вас доступен удобный способ оплаты: банковская карта, наличными при получении.</p>
+                                </div>
+                            </div>
+                            <div class="delivery__blog">
+                                <h3 class="delivery__title">Возврат товара</h3>
+                                <div class="delivery__text">
+                                    <p>Согласно постановлению правительства РФ от 19 Января 1998 г. № 55 «Швейные и трикотажные бельевые изделия надлежащего качества не подлежат Возврату или обмену на аналогичный товар другого размера, формы, габарита, фасона, расцветки или комплектации».</p>
+                                    <p>Если при доставке вы обнаружили, что товар не надлежащего качества, то возможен возврат или обмен товара также компанией СДЭК.</p>
+                                </div>
+                            </div>
+                            <div class="delivery__blog">
+                                <h3 class="delivery__title">Правила оплаты и безопасность платежей, конфиденциальность информации</h3>
+                                <div class="delivery__text">
+                                    <p>Оплата банковскими картами осуществляется через АО «АЛЬФА-БАНК».</p>
+                                    <p>К оплате принимаются карты VISA, MasterCard, МИР.</p>
+                                    <p> Услуга оплаты через интернет осуществляется в соответствии с Правилами международных платежных систем Visa, MasterCard и Платежной системы МИР на принципах соблюдения конфиденциальности и безопасности совершения платежа, для чего используются самые современные методы проверки, шифрования и передачи данных по закрытым каналам связи. Ввод данных банковской карты осуществляется на защищенной платежной странице АО «АЛЬФА-БАНК».</p>
+                                    <p> На странице для ввода данных банковской карты потребуется ввести данные банковской карты: номер карты, имя владельца карты, срок действия карты, трёхзначный код безопасности (CVV2 для VISA, CVC2 для MasterCard, Код Дополнительной Идентификации для МИР). Все необходимые данные пропечатаны на самой карте. Трёхзначный код безопасности - это три цифры, находящиеся на обратной стороне карты.</p>
+                                    <p>Далее вы будете перенаправлены на страницу Вашего банка для ввода кода безопасности, который придет к Вам в СМС. Если код безопасности к Вам не пришел, то следует обратиться в банк выдавший Вам карту.</p>
+                                </div>
+                            </div>
+                            <div class="delivery__blog">
+                                <h3 class="delivery__title">Способ оплаты</h3>
+                                <div class="delivery__payment">
+                                    <svg fill="none" viewBox="0 0 50 32">
+                                        <g>
+                                            <rect width="50" height="32" fill="#F9F9F9" rx="3" />
+                                            <path fill="#FF5F00" d="M29.36 23.86h-8.75V8.14h8.75v15.72Z" />
+                                            <path fill="#EB001B" d="M21.17 16c0-3.19 1.5-6.03 3.82-7.86a10 10 0 1 0 0 15.72A9.98 9.98 0 0 1 21.17 16Z" />
+                                            <path fill="#F79E1B" d="M41.16 16a10 10 0 0 1-16.18 7.86 9.98 9.98 0 0 0 0-15.72A10 10 0 0 1 41.16 16Z" />
+                                            <path fill="#fff" d="M16.34 16.06c0-.43.29-.8.75-.8.45 0 .75.35.75.8 0 .45-.3.8-.75.8-.46 0-.75-.36-.75-.8Zm2.01 0v-1.24h-.54v.3a.94.94 0 0 0-.78-.36c-.7 0-1.25.54-1.25 1.3s.55 1.3 1.25 1.3c.35 0 .6-.13.78-.36v.3h.54v-1.24Zm18.26 0c0-.43.29-.8.75-.8.45 0 .75.35.75.8 0 .45-.3.8-.75.8-.46 0-.75-.36-.75-.8Zm2.01 0v-2.24h-.54v1.3a.94.94 0 0 0-.78-.36c-.7 0-1.25.54-1.25 1.3s.55 1.3 1.25 1.3c.35 0 .61-.13.78-.36v.3h.54v-1.24Zm-13.56-.82c.35 0 .57.22.63.6h-1.3c.07-.36.28-.6.67-.6Zm0-.48c-.72 0-1.23.53-1.23 1.3 0 .8.53 1.3 1.28 1.3.37 0 .71-.09 1.01-.34l-.26-.4c-.2.16-.47.26-.72.26-.35 0-.67-.16-.75-.61h1.85v-.2c0-.78-.47-1.31-1.17-1.31Zm6.53 1.3c0-.43.29-.8.76-.8.44 0 .75.35.75.8 0 .45-.3.8-.75.8-.47 0-.76-.36-.76-.8Zm2.02 0v-1.24h-.54v.3a.94.94 0 0 0-.79-.36c-.7 0-1.24.54-1.24 1.3s.54 1.3 1.24 1.3c.35 0 .61-.13.79-.36v.3h.54v-1.24Zm-5.07 0c0 .76.53 1.3 1.33 1.3.37 0 .62-.08.9-.29l-.27-.44c-.2.15-.41.23-.65.23-.43 0-.75-.32-.75-.8 0-.48.32-.79.75-.8.24 0 .45.08.65.23l.26-.44a1.3 1.3 0 0 0-.9-.3c-.8 0-1.32.56-1.32 1.31Zm6.97-1.3a.73.73 0 0 0-.66.36v-.3h-.53v2.48h.54v-1.39c0-.41.18-.64.53-.64.1 0 .22.02.34.06l.16-.5a1.15 1.15 0 0 0-.38-.07Zm-14.49.26a1.86 1.86 0 0 0-1.01-.26c-.63 0-1.03.3-1.03.8 0 .4.3.65.85.73l.26.03c.3.04.43.12.43.26 0 .2-.2.3-.56.3-.38 0-.65-.12-.83-.26l-.25.42c.3.22.67.33 1.07.33.72 0 1.14-.34 1.14-.81 0-.44-.33-.67-.87-.75l-.26-.03c-.23-.04-.42-.08-.42-.25 0-.18.18-.29.47-.29.32 0 .63.12.78.21l.23-.43Zm6.98-.26a.73.73 0 0 0-.66.36v-.3h-.53v2.48h.54v-1.39c0-.41.17-.64.53-.64.1 0 .22.02.33.06l.17-.5a1.15 1.15 0 0 0-.38-.07Zm-4.62.06h-.88v-.75h-.55v.75h-.5v.5h.5v1.13c0 .57.23.92.87.92.23 0 .5-.08.67-.2l-.15-.46a1 1 0 0 1-.48.14c-.27 0-.36-.16-.36-.41V15.3h.88v-.49ZM15.3 17.3v-1.56c0-.58-.37-.98-.97-.98-.32 0-.65.1-.88.44a.91.91 0 0 0-.82-.44.82.82 0 0 0-.73.37v-.31h-.54v2.48h.55v-1.37c0-.43.24-.66.6-.66.37 0 .55.23.55.65v1.38h.54v-1.37c0-.43.25-.66.61-.66.37 0 .55.23.55.65v1.38h.54Z" />
+                                        </g>
+                                        <defs>
+                                            <path fill="#fff" d="M0 0h50v32H0z" />
+                                        </defs>
+                                    </svg>
+                                    <svg fill="none" viewBox="0 0 50 32">
+                                        <g clip-path="url(#a)">
+                                            <rect width="50" height="32" fill="#F9F9F9" rx="3" />
+                                            <path fill="#00579F" d="M22.47 21.54h-3.08L21.3 10.5h3.08l-1.92 11.04ZM33.63 10.77a8.11 8.11 0 0 0-2.76-.47c-3.04 0-5.19 1.5-5.2 3.65-.02 1.59 1.53 2.47 2.7 3 1.2.54 1.6.89 1.6 1.37-.02.74-.97 1.08-1.85 1.08a6.53 6.53 0 0 1-2.9-.59l-.4-.17-.43 2.47c.72.3 2.05.58 3.44.6 3.23 0 5.33-1.49 5.35-3.78.02-1.25-.8-2.22-2.58-3-1.08-.5-1.74-.85-1.74-1.37.02-.47.56-.95 1.78-.95 1-.02 1.73.2 2.29.43l.28.11.42-2.38ZM37.72 17.63l1.23-3.1.4-1.05.22.95.7 3.2h-2.55Zm3.8-7.13h-2.38c-.74 0-1.3.2-1.61.92l-4.57 10.12h3.23l.64-1.66h3.95c.1.39.37 1.66.37 1.66H44L41.52 10.5ZM16.82 10.5l-3.02 7.53-.33-1.53c-.55-1.76-2.3-3.68-4.25-4.63l2.76 9.65h3.25l4.84-11.02h-3.25Z" />
+                                            <path fill="#FAA61A" d="M11 10.5H6.05l-.05.22c3.86.92 6.42 3.13 7.47 5.78l-1.07-5.07c-.18-.7-.73-.9-1.4-.93Z" />
+                                        </g>
+                                        <defs>
+                                            <path fill="#fff" d="M0 0h50v32H0z" />
+                                        </defs>
+                                    </svg>
+                                    <svg fill="none" viewBox="0 0 36 25">
+                                        <rect width="34.61" height="23.59" x=".89" y=".5" fill="#fff" stroke="#F3F3F3" rx="3.5" />
+                                        <path fill="#40A548" fill-rule="evenodd" d="M6.15 8.6h.04c.3 0 1-.01 1.32 1.04l1.05 3.66h.2l1.07-3.66c.3-1.05 1.05-1.04 1.42-1.03h2.61v7.94h-2.6v-4.68h-.17l-1.45 4.68H7.68l-1.45-4.68h-.17v4.68h-2.6V8.61h2.7Zm11.45 0v4.7h.2l1.77-3.86c.34-.77 1.07-.83 1.07-.83h2.51v7.94H20.5v-4.68h-.2l-1.74 3.85c-.34.76-1.1.83-1.1.83h-2.52V8.61h2.66Zm11.9 5.58c1.3 0 2.46-.75 2.83-1.8H24.2v4.17h2.53v-2.37h2.78Z" clip-rule="evenodd" />
+                                        <path fill="#1291D0" d="M29.63 8.6h-5.56c.13 1.77 1.65 3.29 3.22 3.29h5.21a2.78 2.78 0 0 0-2.87-3.28Z" />
+                                    </svg>
+                                    <svg fill="none" viewBox="0 0 36 25">
+                                        <rect width="34.61" height="23.59" x=".5" y=".86" fill="#fff" stroke="#F3F3F3" rx="3.5" />
+                                        <path fill="#161520" fill-rule="evenodd" d="M10.8 9.53c-.27.31-.68.56-1.1.52-.05-.42.15-.86.4-1.14.25-.32.7-.54 1.07-.56.04.43-.12.86-.38 1.18Zm.37.6c-.37-.02-.7.12-.97.22-.17.07-.32.13-.43.13-.13 0-.28-.06-.45-.13-.23-.09-.48-.2-.75-.19-.62.01-1.2.36-1.5.93-.66 1.13-.18 2.8.45 3.71.3.46.67.95 1.16.94.2-.01.36-.08.52-.14.18-.08.37-.16.67-.16.28 0 .46.07.64.15.16.07.32.14.56.14.5-.01.81-.46 1.12-.91.33-.49.48-.96.5-1.04l-.01-.01c-.11-.05-.96-.44-.96-1.5-.01-.88.67-1.32.77-1.4h.02a1.7 1.7 0 0 0-1.34-.73Zm3.46 5.55V8.87h2.53c1.3 0 2.21.9 2.21 2.24 0 1.32-.92 2.24-2.25 2.24h-1.44v2.33h-1.05Zm1.05-5.92h1.2c.91 0 1.43.49 1.43 1.35 0 .86-.52 1.35-1.43 1.35h-1.2v-2.7Zm7.14 5.1c-.27.54-.88.87-1.54.87-.97 0-1.65-.58-1.65-1.47 0-.87.66-1.37 1.87-1.45l1.3-.08v-.37c0-.56-.35-.86-1-.86-.52 0-.9.28-.98.7h-.94c.03-.89.85-1.53 1.96-1.53 1.2 0 1.97.64 1.97 1.62v3.39h-.97v-.82h-.02Zm-1.26.06c-.55 0-.9-.27-.9-.68 0-.43.33-.68.98-.72l1.17-.07v.38c0 .64-.54 1.1-1.25 1.1Zm5.46 1.03c-.42 1.19-.9 1.58-1.92 1.58-.08 0-.34 0-.4-.02v-.82l.31.02c.46 0 .72-.2.88-.71l.1-.3-1.77-4.96h1.09l1.23 4.02h.02l1.23-4.02h1.06l-1.83 5.2Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <svg fill="none" viewBox="0 0 37 25">
+                                        <rect width="34.61" height="23.59" x="1.2" y=".86" fill="#fff" stroke="#F3F3F3" rx="3.5" />
+                                        <path fill="#5F6368" fill-rule="evenodd" d="M17.84 15.18v-2.77h1.5c.61 0 1.13-.2 1.55-.59.43-.37.66-.9.65-1.45.01-.55-.23-1.08-.65-1.44-.41-.4-.98-.6-1.56-.6h-2.4v6.85h.9Zm0-3.61v-2.4h1.52c.34 0 .66.13.9.37a1.15 1.15 0 0 1 0 1.67c-.24.24-.57.37-.9.36h-1.52ZM25.22 10.87a2.3 2.3 0 0 0-1.59-.53c-.86 0-1.5.31-1.95.92l.8.49c.3-.41.7-.62 1.2-.62.33 0 .64.1.88.32.24.19.38.48.37.78v.2c-.34-.2-.79-.29-1.33-.29-.63 0-1.13.15-1.51.43-.38.29-.57.67-.57 1.16 0 .44.2.86.54 1.15.36.3.8.45 1.34.45.62 0 1.12-.26 1.5-.8h.03v.65h.87V12.3c0-.6-.2-1.08-.58-1.42Zm-2.46 3.45a.7.7 0 0 1-.3-.57c0-.26.12-.47.37-.64.25-.18.55-.26.92-.26.5 0 .9.1 1.19.32 0 .37-.15.7-.45.97-.28.26-.64.41-1.02.41-.26 0-.5-.08-.7-.23ZM30.78 10.5l-3.03 6.75h-.93l1.12-2.37-2-4.38h1l1.43 3.36h.02l1.4-3.36h1Z" clip-rule="evenodd" />
+                                        <path fill="#4285F4" fill-rule="evenodd" d="M14.17 11.8c0-.26-.02-.53-.07-.8h-3.82v1.52h2.19c-.1.5-.39.92-.81 1.2v.98h1.3c.77-.68 1.21-1.7 1.21-2.9Z" clip-rule="evenodd" />
+                                        <path fill="#34A853" fill-rule="evenodd" d="M10.28 15.65c1.1 0 2.01-.34 2.69-.95l-1.31-.98c-.37.24-.83.38-1.38.38-1.06 0-1.96-.7-2.28-1.63H6.65v1.02a4.07 4.07 0 0 0 3.63 2.16Z" clip-rule="evenodd" />
+                                        <path fill="#FBBC04" fill-rule="evenodd" d="M8 12.47a2.29 2.29 0 0 1 0-1.5V9.95H6.65a3.83 3.83 0 0 0 0 3.54L8 12.47Z" clip-rule="evenodd" />
+                                        <path fill="#EA4335" fill-rule="evenodd" d="M10.28 9.34c.58 0 1.13.2 1.55.6L13 8.8a3.96 3.96 0 0 0-2.71-1.02c-1.54 0-2.94.83-3.63 2.16L8 10.97a2.42 2.42 0 0 1 2.28-1.63Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div><!-- /.delivery__blog -->
+                        </div><!-- /.delivery__wrapper -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.delivery -->
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img class="header__logo__img img" src="assets/images/logo.svg" alt="Pluto">
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Услуги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="delivery.html">Доставка и Оплата</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Помощь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer__address">
+                    <div class="footer__social__logo">
+                        <a href="#" target="_blank">
+                            <img class="img" src="assets/images/inst-logo.svg" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="footer__address__item">
+                        <h3 class="footer__title">Магазин</h3>
+                        <address class="address">
+                            <a class="address__link" href="#">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                    <div class="footer__address__item">
+                        <h3 class="footer__title">Шоурум</h3>
+                        <address class="address">
+                            <a class="address__link" href="#">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                </div>
+            </div><!-- /.footer__wrapper -->
+        
+            <div class="footer__copyright container">
+                <div class="footer__copyright__link">&#169; 2022 «Плуто» Все права защищены</div>
+                <a class="footer__copyright__link" href="#">Карта сайта</a>
+                <a class="footer__copyright__link" href="#">Политика обработки персональных данных</a>
+                <div class="footer__copyright__link">
+                    <span>Разработка и дизайн:</span>
+                    <a href="#" target="_blank">
+                        <img class="footer__copyright__logo img" src="assets/images/copyright-logo.svg" alt="Cyber Nevod">
+                    </a>
+                </div>
+            </div>
+        </footer><!-- /.footer -->    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2916d673-2794-415a-884a-d370f26bb315&lang=ru_RU">
+    </script>
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Pluto | Профиль</title></head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__row row">
+                    <div class="header__left col-lg-3">
+                        <div class="header__switch">
+                            <a href="index.html" class="header__switch__btn btn active">Магазин</a>
+                            <a href="#" class="header__switch__btn btn">Шоурум</a>
+                        </div>
+                        <address class="address">
+                            <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                    <div class="burger__wrapper col-1 col-md-3 col-lg-3">
+                        <button class="burger" type="button"><span>Меню</span></button>
+                    </div>
+        
+                    <div class="header__logo col-5 offset-3 col-md-2 col-lg-2 offset-md-2 offset-lg-2">
+                        <img class="header__logo__img img" src="assets/images/logo.svg" alt="Pluto Жизнь - яркая штука!">
+                        <div class="header__logo__text">Жизнь - яркая штука!</div>
+                    </div>
+        
+                    <div class="header__menu col-md-4 col-lg-3 offset-md-1 offset-lg-2">
+                        <form class="form__search" action="not-found.html" method="get">
+                            <input class="form__input form__input--search" type="text" placeholder="Искать">
+                        </form>
+                        <a class="header__menu__link header__menu__link--search" href="#" id="searchBtn">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M9.16667 3.125C5.82995 3.125 3.125 5.82995 3.125 9.16667c0 3.33673 2.70495 6.04163 6.04167 6.04163 3.33673 0 6.04163-2.7049 6.04163-6.04163 0-3.33672-2.7049-6.04167-6.04163-6.04167ZM1.875 9.16667c0-4.02708 3.26459-7.29167 7.29167-7.29167 4.02703 0 7.29163 3.26459 7.29163 7.29167 0 4.02703-3.2646 7.29163-7.29163 7.29163-4.02708 0-7.29167-3.2646-7.29167-7.29163Z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M13.4331 13.4331c.244-.2441.6398-.2441.8838 0l3.625 3.625c.2441.244.2441.6398 0 .8838-.244.2441-.6398.2441-.8838 0l-3.625-3.625c-.2441-.244-.2441-.6398 0-.8838Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Искать</span>
+                        </a>
+                        <a class="header__menu__link" href="form-enter.html">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.87 13.03a3.96 3.96 0 0 1 2.8-1.15h6.66a3.96 3.96 0 0 1 3.96 3.95v1.67a.63.63 0 0 1-1.25 0v-1.67a2.7 2.7 0 0 0-2.7-2.7H6.66a2.7 2.7 0 0 0-2.71 2.7v1.67a.62.62 0 1 1-1.25 0v-1.67c0-1.05.41-2.05 1.16-2.8ZM10 3.13a2.7 2.7 0 1 0 0 5.41 2.7 2.7 0 0 0 0-5.41Zm-3.96 2.7a3.96 3.96 0 1 1 7.92 0 3.96 3.96 0 0 1-7.92 0Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Вход</span>
+                        </a>
+                        <a class="header__menu__link" href="profile.html" id="tabsFavBtn">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                            </svg>
+                            <span class="header__menu__text">Избранное</span>
+                        </a>
+                        <a class="header__menu__link" href="basket.html">
+                            <svg class="header__menu__icon" fill="none" viewBox="0 0 20 20">
+                                <path d="M17 5.5v11.25c0 .31-.06.6-.18.87A2.32 2.32 0 0 1 14.69 19H4.31a2.38 2.38 0 0 1-2.12-1.38 2.1 2.1 0 0 1-.19-.87V5.5h2.3V4.37A3.44 3.44 0 0 1 7.77 1c.63.01 1.21.16 1.75.47a3.42 3.42 0 0 1 3.06-.2 3.54 3.54 0 0 1 1.85 1.8c.18.42.27.85.27 1.31V5.5H17Zm-3.46-1.13a2.3 2.3 0 0 0-3.07-2.12 3.3 3.3 0 0 1 .64 1.25c.05.2.08.41.1.62l.02.68v.7h2.3V4.37ZM5.46 5.5h4.62V4.37a2.3 2.3 0 0 0-2.3-2.25A2.38 2.38 0 0 0 5.65 3.5a2.1 2.1 0 0 0-.2.88V5.5Zm7.23 12.38a2.2 2.2 0 0 1-.3-1.13V6.62H3.14v10.13a1.07 1.07 0 0 0 .34.8 1.18 1.18 0 0 0 .82.32h8.38Zm3.16-11.25h-2.31v10.12a1.07 1.07 0 0 0 .34.8 1.18 1.18 0 0 0 1.26.24 1.18 1.18 0 0 0 .62-.6c.06-.14.09-.28.09-.44V6.62Z" />
+                            </svg>
+                            <span class="header__menu__text">Корзина</span>
+                        </a>
+                    </div><!-- /.header__menu -->
+                </div><!-- /.row -->
+        
+        
+        
+                <!-- Nav -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Нижнее бельё</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Купальники</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Домашняя одежда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Носочно-чулочные изделия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Пляжная одежда</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Аксессуары</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Мужчинам</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Детям</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--sale" href="#">SALE
+                                <span class="nav__link__count">32</span>
+                            </a>
+                            <div class="nav__catalog">
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Тип</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Балконет</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бесшовное бельё</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Боди</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бралетт</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Бюстгальтеры</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Комплект нижнего белья</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Корректирующее белье</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Корсеты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Пояса для чулок</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Стринги</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы бикини</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы бразилиано</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы танго</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">Трусы шорты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Коллекции</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">DKNY</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">YSABEL MORA</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">PLUTO</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">ORNIT</a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">AGUA BENDITA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav__catalog__item">
+                                    <h2 class="nav__catalog__title">Особенности</h2>
+                                    <ul class="nav__catalog__list">
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">SALE &#8212; <span>Шоурум</span></a>
+                                        </li>
+                                        <li class="nav__catalog__item">
+                                            <a class="nav__catalog__link" href="#">НОВИНКА &#8212; <span>Магазин</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.nav__catalog -->
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__address__item">
+                                <h3 class="footer__title">Магазин</h3>
+                                <address class="address">
+                                    <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                                    <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                                </address>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__address__item">
+                                <h3 class="footer__title">Шоурум</h3>
+                                <address class="address">
+                                    <a class="address__link" href="contacts.html">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                                    <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                                </address>
+                            </div>
+                        </li>
+                        <li class="nav__item nav__item--address">
+                            <div class="footer__social__logo">
+                                <a href="#" target="_blank">
+                                    <img class="img" src="assets/images/inst-logo.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul><!-- /.nav__list -->
+                   
+                </nav><!-- /.nav -->
+            </div><!-- /.container -->
+        </header><!-- /.header -->
+        <main>
+            <!-- Profile -->
+            <div class="profile">
+                <div class="container">
+                    <div class="profile__nav tabs__nav row">
+                        <a class="profile__nav__btn nav__tabs__btn active btn col-5 col-lg-3" data-tab="#tab-prof" href="#">
+                            <div class="profile__nav__item">
+                                <div class="profile__nav__icon">
+                                    <svg fill="none" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3.87 13.03a3.96 3.96 0 0 1 2.8-1.15h6.66a3.96 3.96 0 0 1 3.96 3.95v1.67a.63.63 0 0 1-1.25 0v-1.67a2.7 2.7 0 0 0-2.7-2.7H6.66a2.7 2.7 0 0 0-2.71 2.7v1.67a.62.62 0 1 1-1.25 0v-1.67c0-1.05.41-2.05 1.16-2.8ZM10 3.13a2.7 2.7 0 1 0 0 5.41 2.7 2.7 0 0 0 0-5.41Zm-3.96 2.7a3.96 3.96 0 1 1 7.92 0 3.96 3.96 0 0 1-7.92 0Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="profile__nav__info">
+                                    <h3 class="profile__category">Мой профиль</h3>
+                                    <div class="page__nav__count">11 заказов</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="profile__nav__btn nav__tabs__btn btn col-5 offset-1 col-lg-3 offset-lg-0" data-tab="#tab-history" href="#">
+                            <div class="profile__nav__item">
+                                <div class="profile__nav__icon">
+                                    <svg fill="none" viewBox="0 0 51 50">
+                                        <path fill-rule="evenodd" d="M5.25 25c0-.77.62-1.4 1.4-1.4H17.8c.46 0 .9.23 1.16.62l3.3 4.96h5.95l3.31-4.96c.26-.39.7-.62 1.16-.62h11.16a1.4 1.4 0 0 1 0 2.8H33.44l-3.3 4.95c-.27.39-.7.62-1.17.62h-7.44c-.47 0-.9-.23-1.16-.62l-3.3-4.96H6.64a1.4 1.4 0 0 1-1.4-1.4Z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M16.4 8.72h17.7a5.12 5.12 0 0 1 4.58 2.84l6.42 12.81c.1.2.15.41.15.63v11.16a5.12 5.12 0 0 1-5.12 5.12H10.37a5.12 5.12 0 0 1-5.12-5.12V25c0-.22.05-.43.15-.63l6.41-12.81a5.12 5.12 0 0 1 4.58-2.84Zm.01 2.79-2.1 1.3-6.27 12.52v10.83a2.33 2.33 0 0 0 2.33 2.33h29.76a2.33 2.33 0 0 0 2.33-2.33V25.33L36.19 12.8a2.33 2.33 0 0 0-2.08-1.3m-17.7 0-2.1 1.3a2.33 2.33 0 0 1 2.08-1.3m0 0h17.72-17.72Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="profile__nav__info">
+                                    <h3 class="profile__category">История заказов</h3>
+                                    <div class="page__nav__count">11 заказов</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="profile__nav__btn nav__tabs__btn btn col-5 col-lg-3" id="tabFav" data-tab="#tab-fav" href="#">
+                            <div class="profile__nav__item">
+                                <div class="profile__nav__icon">
+                                    <svg fill="none" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="profile__nav__info">
+                                    <h3 class="profile__category">Избранное</h3>
+                                    <div class="page__nav__count">11 заказов</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="profile__nav__btn nav__tabs__btn btn col-5 offset-1 col-lg-3 offset-lg-0" data-tab="#tab-settings" href="#">
+                            <div class="profile__nav__item">
+                                <div class="profile__nav__icon">
+                                    <svg fill="none" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M13.46 3.45c-.38 0-.7.33-.7.73 0 .4.32.73.7.73.38 0 .7-.33.7-.73 0-.4-.32-.73-.7-.73Zm-1.96 0A2.09 2.09 0 0 1 13.46 2c.9 0 1.68.6 1.96 1.45h2.89c.38 0 .69.33.69.73 0 .4-.31.73-.7.73h-2.88a2.09 2.09 0 0 1-1.96 1.45c-.9 0-1.67-.6-1.96-1.45H1.7a.71.71 0 0 1-.7-.73c0-.4.31-.73.7-.73h9.8ZM6.54 9.27c-.38 0-.7.33-.7.73 0 .4.32.73.7.73.38 0 .7-.33.7-.73 0-.4-.32-.73-.7-.73Zm-1.96 0a2.09 2.09 0 0 1 1.96-1.45c.9 0 1.67.6 1.96 1.45h9.8c.39 0 .7.33.7.73 0 .4-.31.73-.7.73H8.5a2.09 2.09 0 0 1-1.96 1.45c-.9 0-1.68-.6-1.96-1.45H1.69A.71.71 0 0 1 1 10c0-.4.31-.73.7-.73h2.88Zm8.88 5.82c-.38 0-.7.33-.7.73 0 .4.32.73.7.73.38 0 .7-.33.7-.73 0-.4-.32-.73-.7-.73Zm-1.96 0a2.09 2.09 0 0 1 1.96-1.45c.9 0 1.68.6 1.96 1.45h2.89c.38 0 .69.33.69.73 0 .4-.31.73-.7.73h-2.88A2.09 2.09 0 0 1 13.46 18c-.9 0-1.67-.6-1.96-1.45H1.7a.71.71 0 0 1-.7-.73c0-.4.31-.73.7-.73h9.8Z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="profile__nav__info">
+                                    <h3 class="profile__category">Настройки аккаунта</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div><!-- /.profile__nav -->
+                    <div class="tabs__content">
+                        <div class="tabs__item active" id="tab-prof">
+                            <div class="profile__wrapper profile__wrapper--prof">
+                                <div class="row">
+                                    <div class="profile__header profile__header--prof">
+                                        <h2 class="page__title">Мой профиль</h2>
+                                        <h3 class="profile__subtitle">Личные данные</h3>
+                                        <div class="profile__data">
+                                            <div class="profile__data__item col-md-4 col-lg-2 offset-lg-3">
+                                                <div class="profile__data__title">Имя Фамилия</div>
+                                                <div class="profile__data__name">Эмилия Милосская</div>
+                                            </div>
+                                            <div class="profile__data__item col-md-4 col-lg-2">
+                                                <div class="profile__data__title">Эл. почта</div>
+                                                <div class="profile__data__name">emile@gmail.com</div>
+                                            </div>
+                                            <div class="profile__data__item col-md-4 col-lg-2">
+                                                <div class="profile__data__title">Номер телефона</div>
+                                                <div class="profile__data__name">+7 987 654 32 10</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="profile__subtitle text-center">Активные заказы</h3>
+                                <div class="profile__orders" data-table>
+                                    <div class="profile__orders__header row">
+                                        <div class="profile__orders__link col-3 col-md-2">Заказ №</div>
+                                        <div class="profile__orders__link col-3 col-md-6">Количество товаров</div>
+                                        <div class="profile__orders__link col-3 col-md-2">К оплате</div>
+                                        <div class="profile__orders__link col-3 col-md-2">Способ оплаты</div>
+                                    </div>
+                                    <div class="profile__orders__main profile__orders__main--with-btn row" data-order="1">
+                                        <div class="profile__orders__item col-3 col-md-2">29481105</div>
+                                        <div class="profile__orders__item col-3 col-md-6">1 товар
+                                            <button class="btn profile__orders__btn" type="button">Скрыть состав заказа</button>
+                                        </div>
+                                        <div class="profile__orders__item col-3 col-md-2">1690 ₽</div>
+                                        <div class="profile__orders__item col-3 col-md-2">Оплата онлайн</div>
+                                    </div>
+                                    <div class="profile__orders profile__orders--sub" data-order="1">
+                                        <div class="profile__orders__header row">
+                                            <div class="profile__orders__link col-md-10">Товар</div>
+                                            <div class="profile__orders__link col-md-2">К оплате</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-12 col-md-10">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-7.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-12 col-md-10">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-5.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__orders__main profile__orders__main--with-btn row" data-order="2">
+                                        <div class="profile__orders__item col-3 col-md-2">29481105</div>
+                                        <div class="profile__orders__item profile__orders__item--btn col-3 col-md-6">1 товар
+                                            <button class="profile__orders__btn btn" type="button">Скрыть состав заказа</button>
+                                        </div>
+                                        <div class="profile__orders__item col-3 col-md-2">1690 ₽</div>
+                                        <div class="profile__orders__item col-3 col-md-2">Оплата онлайн</div>
+                                    </div>
+                                    <div class="profile__orders profile__orders--sub" data-order="2">
+                                        <div class="profile__orders__header row">
+                                            <div class="profile__orders__link col-md-8">Товар</div>
+                                            <div class="profile__orders__link col-md-2">К оплате</div>
+                                            <div class="profile__orders__link col-md-2">Статус</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-12 col-md-8">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-7.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                            <div class="profile__orders__item col-md-2 offset-10 offset-md-0">Получено</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-md-8">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-5.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                            <div class="profile__orders__item col-md-2 offset-10 offset-md-0">Возврат</div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.profile__orders -->
+                            </div><!-- /.profile__prof -->
+                        </div><!-- /.tabs__item -->
+            
+                        <div class="tabs__item" id="tab-history">
+                            <div class="profile__wrapper profile__wrapper--history">
+                                <div class="row">
+                                    <div class="profile__header profile__header--history">
+                                        <h2 class="page__title">Заказы</h2>
+                                    </div>
+                                </div>
+                                <div class="profile__orders" data-table>
+                                    <div class="profile__orders__header row">
+                                        <div class="profile__orders__link col-2">Заказ №</div>
+                                        <div class="profile__orders__link col-4">Количество товаров</div>
+                                        <div class="profile__orders__link col-2">К оплате</div>
+                                        <div class="profile__orders__link col-2">Способ оплаты</div>
+                                        <div class="profile__orders__link col-2">Статус</div>
+                                    </div>
+                                    <div class="profile__orders__main profile__orders__main--with-btn row" data-order="3">
+                                        <div class="profile__orders__item col-3 col-md-2">29481105</div>
+                                        <div class="profile__orders__item profile__orders__item--btn col-3 col-md-6">1 товар
+                                            <button class="profile__orders__btn btn" type="button">Скрыть состав заказа</button>
+                                        </div>
+                                        <div class="profile__orders__item col-2 col-md-2">1690 ₽</div>
+                                        <div class="profile__orders__item col-2 col-md-2">Оплата онлайн</div>
+                                    </div>
+                                    <div class="profile__orders profile__orders--sub" data-order="3">
+                                        <div class="profile__orders__header row">
+                                            <div class="profile__orders__link col-md-8">Товар</div>
+                                            <div class="profile__orders__link col-md-2">К оплате</div>
+                                            <div class="profile__orders__link col-md-2">Статус</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-12 col-md-8">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-7.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                            <div class="profile__orders__item col-md-2 offset-10 offset-md-0">Получено</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-md-8">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-5.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                            <div class="profile__orders__item col-md-2 offset-10 offset-md-0">Возврат</div>
+                                        </div>
+                                    </div>
+                                    <div class="profile__orders__main profile__orders__main--with-btn row" data-order="4">
+                                        <div class="profile__orders__item col-3 col-md-2">29481105</div>
+                                        <div class="profile__orders__item profile__orders__item--btn col-3 col-md-4">1 товар
+                                            <button class="profile__orders__btn btn" type="button">Скрыть состав заказа</button>
+                                        </div>
+                                        <div class="profile__orders__item col-2 col-md-2">1690 ₽</div>
+                                        <div class="profile__orders__item col-2 col-md-2">Оплата онлайн</div>
+                                        <div class="profile__orders__item col-2 col-md-2">Возврат</div>
+                                    </div>
+                                    <div class="profile__orders profile__orders--sub" data-order="4">
+                                        <div class="profile__orders__header row">
+                                            <div class="profile__orders__link col-md-8">Товар</div>
+                                            <div class="profile__orders__link col-md-2">К оплате</div>
+                                            <div class="profile__orders__link col-md-2">Статус</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-12 col-md-8">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-7.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                            <div class="profile__orders__item col-md-2 offset-10 offset-md-0">Получено</div>
+                                        </div>
+                                        <div class="profile__orders__main row">
+                                            <div class="profile__orders__item col-md-8">
+                                                <div class="basket__item">
+                                                    <div class="basket__preview">
+                                                        <img class="basket__item__img img" src="assets/images/card/card-5.jpg" alt="V-стринги с рисунком роз и декоративным бантиком">
+                                                    </div>
+                                                    <div class="basket__info">
+                                                        <h4 class="basket__name"><a href="card.html">V-стринги с рисунком роз и декоративным бантиком</a></h4>
+                                                        <ul class="basket__description">
+                                                            <li>Цвет: Бежевый - 044 - Мягкий Бежевый</li>
+                                                            <li>Размер: S</li>
+                                                        </ul>
+                                                    </div><!-- /.basket__info -->
+                                                </div><!-- /.basket__item -->
+                                            </div>
+                                            <div class="profile__orders__item col-md-2 offset-3 offset-sm-2 offset-md-0">2390 ₽</div>
+                                            <div class="profile__orders__item col-md-2 offset-10 offset-md-0">Возврат</div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.profile__orders -->
+                            </div><!-- /.profile__history -->
+                        </div><!-- /.tabs__item -->
+            
+                        <div class="tabs__item" id="tab-fav">
+                            <div class="profile__wrapper profile__wrapper--favorite">
+                                <div class="row">
+                                    <div class="profile__header profile__header--prof">
+                                        <h2 class="page__title">Избранное</h2>
+                                    </div>
+                                </div>
+                                <div class="catalog__item row gx-5" id="favoriteWrapper"></div><!-- /.row -->
+                            </div><!-- /.profile__favorite -->
+                        </div><!-- /.tabs__item -->
+            
+                        <div class="tabs__item" id="tab-settings">
+                            <div class="profile__wrapper profile__wrapper--settings">
+                                <div class="row">
+                                    <div class="profile__header profile__header--prof">
+                                        <h2 class="page__title">Настройки аккаунта</h2>
+                                    </div>
+                                </div>
+                                <div class="profile__settings col-md-6 col-lg-4 offset-md-2 offset-lg-3">
+                                    <h3 class="profile__subtitle profile__subtitle--settings">Личные данные</h3>
+                                    <form id="settingsForm" action="/" method="get">
+                                        <div class="profile__settings__item">
+                                            <input 
+                                                class="form__input form__input--mb-0" 
+                                                type="text" 
+                                                placeholder="Имя"
+                                                title="Имя пользователя"
+                                                id="settingsName">
+                                        </div>
+                                        <div class="profile__settings__item">
+                                            <input
+                                                class="form__input form__input--mb-0" 
+                                                type="email" 
+                                                placeholder="Эл. почта"
+                                                title="Электронная почта"
+                                                id="settingsEmail">
+                                        </div>
+                                        <div class="profile__settings__item">
+                                            <input 
+                                                class="form__input form__input--mb-0" 
+                                                type="tel"
+                                                value="+7 987 654 32 10" 
+                                                disabled
+                                                id="settingsPhone">
+                                        </div>
+                                        <div class="profile__settings__item">
+                                            <button class="btn btn--brand btn--100" type="submit">Сохранить изменения</button>
+                                        </div>
+                                        <div class="profile__settings__item">
+                                            <label class="form__label form__label--checkbox" for="settingsMailAgreement">
+                                                <input 
+                                                    class="form__checkbox" 
+                                                    type="checkbox" 
+                                                    name="settingsMailAgreement" id="settingsMailAgreement">
+                                                <span class="form__name">Согласен на рассылку с рекламным и акционными предложениями</span>
+                                            </label>
+                                        </div>
+                                        <div class="profile__settings__item">
+                                            <label class="form__label form__label--checkbox" for="settingsAgreement">
+                                                <input 
+                                                    class="form__checkbox" 
+                                                    type="checkbox" 
+                                                    name="settingsAgreement" 
+                                                    id="settingsAgreement"
+                                                    checked
+                                                    required>
+                                                <span class="form__name">Согласен с условиями Правил пользования торговой площадкой и правилами возврата</span>
+                                            </label>
+                                        </div>
+                                        <div class="profile__settings__text">
+                                            *Для изменения номера телефона, обратитесь в службу <a href="#">клиентской поддержки.</a>
+                                        </div>
+                                    </form><!-- /.form -->
+                                </div><!-- /.profile__settings -->
+            
+                                <div class="profile__settings__footer col-md-5 offset-md-3">
+                                    <h3 class="profile__subtitle profile__subtitle--settings">Личные данные</h3>
+                                    <div class="profile__settings__text">Вы можете удалить свой аккаунт в один клик. Обратите внимание, что в этом случае удалится важная информация: история заказов, бонусы, подписка на новости и т.д. Мы не сможем это восстановить.</div>
+                                    <button class="btn btn--outline" type="button">Удалить навсегда</button>
+                                </div>
+                            </div><!-- /.profile__settings -->
+                        </div><!-- /.tabs__item -->
+                    </div>
+                </div><!-- /.container -->
+            </div><!-- /.profile -->
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img class="header__logo__img img" src="assets/images/logo.svg" alt="Pluto">
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">О нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Услуги</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="delivery.html">Доставка и Оплата</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Блог</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Помощь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer__address">
+                    <div class="footer__social__logo">
+                        <a href="#" target="_blank">
+                            <img class="img" src="assets/images/inst-logo.svg" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="footer__address__item">
+                        <h3 class="footer__title">Магазин</h3>
+                        <address class="address">
+                            <a class="address__link" href="#">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                    <div class="footer__address__item">
+                        <h3 class="footer__title">Шоурум</h3>
+                        <address class="address">
+                            <a class="address__link" href="#">Красноярск ул. 9 мая 77 ТРЦ «Планета»</a>
+                            <a class="address__link" href="tel:+7(391)205-09-77">+7 (391) 205-09-77</a>
+                        </address>
+                    </div>
+                </div>
+            </div><!-- /.footer__wrapper -->
+        
+            <div class="footer__copyright container">
+                <div class="footer__copyright__link">&#169; 2022 «Плуто» Все права защищены</div>
+                <a class="footer__copyright__link" href="#">Карта сайта</a>
+                <a class="footer__copyright__link" href="#">Политика обработки персональных данных</a>
+                <div class="footer__copyright__link">
+                    <span>Разработка и дизайн:</span>
+                    <a href="#" target="_blank">
+                        <img class="footer__copyright__logo img" src="assets/images/copyright-logo.svg" alt="Cyber Nevod">
+                    </a>
+                </div>
+            </div>
+        </footer><!-- /.footer -->    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

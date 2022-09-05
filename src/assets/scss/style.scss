@@ -1,0 +1,50 @@
+@import "vendor/reset";
+@import "fonts";
+@import "variables";
+@import "helpers";
+@import "global";
+@import "mixins";
+
+/* Bootstrap */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap-grid";
+
+/* Swiper */
+@import 'swiper/swiper.scss';
+@import 'swiper/modules/navigation/navigation.scss';
+@import 'swiper/modules/pagination/pagination.scss';
+
+/* Blocks */
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/address";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/buttons";
+@import "blocks/tabs";
+@import "blocks/card";
+@import "blocks/size";
+@import "blocks/selecting";
+@import "blocks/section";
+@import "blocks/reviews";
+@import "blocks/news";
+@import "blocks/blog";
+@import "blocks/brands";
+@import "blocks/about";
+@import "blocks/footer";
+@import "blocks/breadcrumbs";
+@import "blocks/catalog";
+@import "blocks/filter";
+@import "blocks/form";
+@import "blocks/card-page";
+@import "blocks/enter";
+@import "blocks/basket";
+@import "blocks/order";
+@import "blocks/profile";
+@import "blocks/delivery";
+@import "blocks/map";
+@import "blocks/search";
+@import "blocks/modal";

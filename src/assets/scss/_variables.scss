@@ -1,0 +1,24 @@
+:root {
+    /* Font */
+    font-size: 62.5%;
+    --regular-text: 1.6rem;
+    --mainfont: 'Forum', cursive;
+    --secondfont: 'TT Norms';
+
+    /* Colors */
+    --black: #111;
+    --white: #FFF;
+    --brand: #A77D57;
+    --gold: #D9A95E;
+    --background: #F6F6F6;
+    --gray: #555;
+    --divider: #E2E1DB;
+    --hover: #C8C5BB;
+
+    /* Sizes */
+    --laptop: 1320px;
+    --tablet-bg: 1140px;
+    --tablet: 992px;
+    --mobile: 768px;
+    --mobile-sm: 576px;
+}

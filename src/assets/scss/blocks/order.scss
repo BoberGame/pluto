@@ -1,0 +1,135 @@
+.order {
+    margin: 24px 0 75px;
+
+    @include breakpoint(1140px) {
+        padding-top: 80px;
+    }
+}
+
+.order__header {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    border-bottom: 1px solid var(--divider);
+}
+
+.order__link {
+    font-size: var(--regular-text);
+    line-height: 1.2;
+    color: var(--gray);
+}
+
+.order__process {
+    font-family: var(--secondfont);
+
+    @include breakpoint(992px) {
+        margin-bottom: 50px;
+    }
+}
+
+.order__category {
+    padding-bottom: 23px;
+    margin-bottom: 24px;
+
+    border-bottom: 1px solid var(--divider);
+}
+
+.order__subtitle {
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.order__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.order__wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+}
+
+.order__radio__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 15px;
+
+    border: 1px solid var(--divider);
+    border-radius: 2px;
+
+    &:hover {
+        background-color: var(--brand);
+
+        & .form__name--radio:after {
+            opacity: 1;
+        }
+
+        & .form__name,
+        b {
+            color: var(--white);
+        }
+    }
+}
+
+.order__right {
+    display: block;
+    padding: 24px 24px 32px;
+    max-height: 470px;
+
+    border: 1px solid var(--divider);
+    font-family: var(--secondfont);
+}
+
+.order__right__header {
+    margin-bottom: 24px;
+}
+
+.order__right__item {
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.order__name {
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.order__price {
+    font-size: var(--regular-text);
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.order__footer {
+    margin-top: 24px;
+}
+
+.order__success__wrapper {
+    @include breakpoint(1140px) {
+        padding-top: 120px;
+    }
+}
+
+.order__success {
+    margin-bottom: 24px;
+
+    text-align: center;
+}
+
+.order__number {
+    font-size: var(--regular-text);
+    font-family: var(--secondfont);
+    color: #4B4B4B;
+}

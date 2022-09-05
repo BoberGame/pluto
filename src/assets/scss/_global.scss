@@ -1,0 +1,31 @@
+body {
+    background-color: var(--white);
+    font-size: var(--regular-text);
+    color: var(--black);
+    font-family: var(--mainfont);
+    font-weight: 400;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}

@@ -1,0 +1,37 @@
+.filter {
+    display: none;
+    padding: 40px;
+    column-gap: 50px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    background-color: var(--white);
+    font-family: var(--secondfont);
+
+    &.active {
+        display: flex;
+    }
+}
+
+.filter__title {
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #000;
+}
+
+.filter__item {
+    margin-bottom: 15px;
+}
+
+.filter__actions {
+    margin-left: auto;
+    align-self: flex-end;
+    justify-self: flex-end;
+}

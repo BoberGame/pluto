@@ -1,0 +1,164 @@
+.blog {
+    margin: 70px 0 130px;
+
+    @include breakpoint(576px) {
+        margin-bottom: 65px;
+    }
+}
+
+.blog__wrapper {
+    margin-bottom: 40px;
+}
+
+.blog__header {
+    margin-bottom: 10px;
+}
+
+.blog__slider {
+    position: relative;
+}
+
+.blog-page__item {
+    margin-bottom: 45px;
+
+    font-family: var(--secondfont);
+}
+
+.blog__item {
+    display: block;
+
+    font-family: var(--secondfont);
+}
+
+.blog__preview {
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.blog__category {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 1.3rem;
+    color: var(--brand);
+}
+
+.blog__title {
+    min-height: 3.5em;
+    margin-bottom: 1em;
+
+    font-size: 2.2rem;
+    font-family: var(--mainfont);
+    color: var(--black);
+    line-height: 1.2;
+
+    @include breakpoint(1140px) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint(768px) {
+        font-size: 1.6rem;
+        min-height: 2.3em;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.blog__date {
+    font-size: 1.3rem;
+    color: var(--gray);
+
+    &--header {
+        font-size: var(--regular-text);
+    }
+}
+
+.blog__text {
+    font-size: var(--regular-text);
+    color: #2C3233;
+    line-height: 1.6;
+
+    &--quote {
+        padding: 32px 26px;
+
+        font-size: 2rem;
+        color: var(--brand);
+        line-height: 1.2;
+        background-color: var(--background);
+        text-align: center;
+    }
+}
+
+.blog__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog__subtitle {
+    margin-bottom: 20px;
+
+    font-size: 2.8rem;
+    color: var(--black);
+    font-family: var(--mainfont);
+
+    &--card {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.blog__list {
+    padding-left: 1.25em;
+    font-size: var(--regular-text);
+    color: var(--black);
+    line-height: 1.6;
+
+    &--dots {
+        list-style: disc;
+    }
+
+    &--num {
+        list-style: decimal;
+    }
+}
+
+.blog__table {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, auto));
+    grid-template-rows: minmax(auto, auto) 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.blog__table__cell {
+    padding: 24px 0 16px 6px;
+
+    font-size: var(--regular-text);
+    color: #6C757D;
+    border-bottom: 1px solid #DFDFDF;
+
+    &--header {
+        padding: 6px 24px 12px 6px;
+
+        font-size: 2rem;
+        font-family: var(--mainfont);
+        line-height: 1.3;
+        color: var(--black);
+        border-bottom: 2px solid #DFDFDF;
+
+        @include breakpoint(768px) {
+            font-size: 1.6rem;
+        }
+
+        @include breakpoint(576px) {
+            padding-right: 5px;
+            padding-left: 3px;
+        }
+    }
+
+    @include breakpoint(576px) {
+        font-size: 1.3rem;
+    }
+}

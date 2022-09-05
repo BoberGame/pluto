@@ -1,0 +1,44 @@
+.tabs {
+    margin: 40px 0 120px;
+}
+
+.tabs__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav__tabs__btn {
+    border-bottom: 2px solid var(--divider);
+    color: #4B4B4B;
+
+    &.active {
+        border-color: var(--gold);
+        color: var(--black);
+    }
+
+    &--contacts {
+        padding-right: 70px;
+        padding-left: 70px;
+
+        &.active {
+            border-color: #000;
+        }
+    }
+}
+
+.tabs__content {
+    position: relative;
+}
+
+.tabs__item {
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    .profile &.active {
+        display: block;
+    }
+}

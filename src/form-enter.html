@@ -1,0 +1,42 @@
+---
+layout: default
+title: Pluto | Вход
+---
+
+<div class="enter">
+    <div class="enter__window">
+        <h2 class="page__subtitle">Войти или создать профиль</h2>
+        <form id="enterForm" action="form-confirm.html" method="get">
+            <label class="form__label">Контактный телефон</label>
+            <input 
+                class="form__input" 
+                type="tel" 
+                placeholder="+7 (___) ___-__-__" 
+                id="enterTel" 
+                required>
+            <button class="btn btn--brand btn--100" type="submit">Получить код</button>
+            <div class="enter__item">
+                <label class="form__label form__label--checkbox" for="inputEnterPc">
+                    <input 
+                        class="form__checkbox" 
+                        type="checkbox" 
+                        name="inputEnterPc" 
+                        id="inputEnterPc">
+                    <span class="form__name">Чужой компьютер</span>
+                </label>
+            </div>
+            <div class="enter__item">
+                <label class="form__label form__label--checkbox" for="enterAgreement">
+                    <input 
+                        class="form__checkbox" 
+                        type="checkbox" 
+                        name="enterAgreement" 
+                        id="enterAgreement"
+                        checked 
+                        required>
+                    <span class="form__name">Согласен с условиями Праквил пользования торговой площадкой и правилами возрата</span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.news {
+    padding: 60px;
+
+    background-color: var(--background);
+}
+
+.news__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+
+    @include breakpoint(992px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include breakpoint(768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include breakpoint(576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.news__actions {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+    margin-top: 30px;
+
+    @include breakpoint(576px) {
+        button {
+            font-size: 1.3rem;
+        }
+    }
+}

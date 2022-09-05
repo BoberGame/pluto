@@ -1,0 +1,23 @@
+.enter {
+    display: flex;
+    justify-content: center;
+    padding: 115px 0 160px;
+
+    background-color: var(--background);
+}
+
+.enter__window {
+    display: block;
+    padding: 2.25em;
+    width: 23.13em;
+
+    background-color: var(--white);
+}
+
+.enter__item {
+    margin: 24px 0;
+}
+
+.enter__subtitle {
+    margin-left: 5px;
+}
