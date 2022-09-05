@@ -54,7 +54,6 @@ const signInModal = $.modal({
     </div>
 </form>
 `,
-  width: '430px',
 });
 
 const successModal = $.modal({
@@ -72,7 +71,6 @@ const successModal = $.modal({
       <button class="btn btn--brand" type="button" data-close="true">Хорошо</button>
   </div>
 `,
-  width: '560px',
 });
 
 window.signInModal = signInModal;

@@ -8158,7 +8158,7 @@ button.swiper-pagination-bullet {
 }
 
 .form__name {
-    margin-left: 5px;
+    margin-left: 8px;
     color: #000;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -9609,7 +9609,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal__window {
-    width: 430px;
+    width: 500px;
     margin: auto;
     padding: 24px;
     background-color: var(--white);
@@ -9619,6 +9619,13 @@ button.swiper-pagination-bullet {
     transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+@media (max-width: 576px) {
+    .modal__window {
+        padding: 18px;
+        width: 100%;
+    }
 }
 
 .modal__title {
@@ -9638,6 +9645,16 @@ button.swiper-pagination-bullet {
 
 .success .modal__text {
     margin: 0 auto 24px;
+}
+
+@media (max-width: 576px) {
+    .modal__text {
+        max-width: none;
+    }
+
+    .success .modal__text {
+        margin-bottom: 14px;
+    }
 }
 
 .modal__icon {

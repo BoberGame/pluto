@@ -4,14 +4,13 @@ window.$ = $;
 export const animationSpeed = 300;
 
 const _createModal = (options) => {
-  const defaultWidth = '430px';
   const MODAL = document.createElement('div');
   const modalClose = '<span class="modal-close" data-close="true">&times;</span>';
 
   MODAL.classList.add('modal');
   MODAL.insertAdjacentHTML('afterbegin', `
   <div class="modal__overlay">
-    <div class="modal__window" style="width: ${options.width || defaultWidth}">
+    <div class="modal__window">
         <div class="modal__header">
             <h2 class="modal__title">${options.title ? options.title : ''}</h2>
             ${options.closable ? modalClose : ''}
