@@ -84,8 +84,6 @@ const clickHandler = (event) => {
 
 const createPattern = (item) => {
   const imgSrc = item.imgSrc.replace('dist/', '');
-  console.log(item.imgSrc);
-  console.log(imgSrc);
   const pattern = `
     <div class="card__item col-12 col-sm-6 col-md-4 col-lg-3" data-card="${item.id}">
       <div class="card__preview">
