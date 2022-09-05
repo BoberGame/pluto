@@ -83,10 +83,13 @@ const clickHandler = (event) => {
 };
 
 const createPattern = (item) => {
+  const imgSrc = item.imgSrc.replace('dist/', '');
+  console.log(item.imgSrc);
+  console.log(imgSrc);
   const pattern = `
     <div class="card__item col-12 col-sm-6 col-md-4 col-lg-3" data-card="${item.id}">
       <div class="card__preview">
-          <img class="card__img img" src="${item.imgSrc}">
+          <img class="card__img img" src="${imgSrc}">
           <button class="card__favorite__btn ${ACTIVE_CLASS}" type="button">
               <svg class="card__favorite__icon" fill="none" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M12.13 2.27a5.2 5.2 0 0 1 5.68 8.5l-7.37 7.37a.63.63 0 0 1-.88 0l-7.37-7.37A5.21 5.21 0 0 1 9.56 3.4l.44.44.44-.44a5.2 5.2 0 0 1 1.7-1.13Zm4.8 2.02a3.96 3.96 0 0 0-5.6 0l-.89.88a.63.63 0 0 1-.88 0l-.88-.88a3.96 3.96 0 0 0-5.6 5.6L10 16.8l6.93-6.93a3.96 3.96 0 0 0 0-5.6Z" clip-rule="evenodd" />
